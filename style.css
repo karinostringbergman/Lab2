@@ -1,0 +1,188 @@
+@import "variables.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+	background-image: url(bergmanstaende.jpg);
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    max-width: 1180px;
+    background-color: var(--section);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--body);
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    z-index: 90;
+    animation-name: section;
+    animation-duration: 4s;
+   }   
+
+nav a {
+    color: var(--body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    min-width: 68px;
+}
+
+nav a:hover{
+color: white;
+}
+
+@keyframes main {
+    from {background-color: var(--body)}
+    to {background-color: var(--main)}
+  }
+
+main{
+    background-color: var(--main);
+    width: 1160px;
+    margin: 50px 20px 20px 20px;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    animation-name: main;
+    animation-duration: 2s;
+}
+
+.main-header{
+    padding-left: 60px;
+    display:flex;
+    flex-direction: column;
+}
+
+.main-content{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@keyframes section {
+    from {background-color: var(--body)}
+    to {background-color: var(--section)}
+  }
+
+section{
+    background-color: var(--section);
+    max-width: 520px;
+    margin: 20px;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    animation-name: section;
+    animation-duration: 4s;
+}
+.section-header{  
+    padding-left: 30px;
+    display:flex;
+    flex-direction: column;
+}
+
+.section-content{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 200px;
+    height:fit-content;
+    margin: 20px;
+    padding: 10px; 
+    display:flex;
+    flex-direction: column;
+}
+
+.article-header img{
+    width: 200px;
+}
+
+.article-content ul{
+    list-style-position: inside;
+}
+
+@keyframes karin{
+    from {background-color: var(--body)}
+    to {background-color: var(--karin)}
+  }
+
+#karin{
+    animation-name: karin;
+    animation-duration: 6s;
+    background-color: var(--karin);
+}
+
+@keyframes lars{
+    from {background-color: var(--body)}
+    to {background-color: var(--lars)}
+  }
+
+#lars{
+    animation-name: lars;
+    animation-duration: 6s;
+    background-color: var(--lars);
+}
+
+
+@keyframes leo{
+    from {background-color: var(--body)}
+    to {background-color: var(--leo)}
+  }
+
+#leo{
+    animation-name: leo;
+    animation-duration: 6s;
+    background-color: var(--leo);
+}
+
+@keyframes sam{
+    from {background-color: var(--body)}
+    to {background-color: var(--sam)}
+  }
+
+#sam{
+    animation-name: sam;
+    animation-duration: 6s;
+    background-color: var(--sam);
+}
+
+@keyframes img{
+    from {opacity: 0;}
+    to {opacity: 1}
+  }
+
+.article-header img{
+    animation-name: img;
+    animation-duration: 8s;
+}
+
+  
+
+footer{
+    background-color: var(--section);
+    width: 1160px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    animation-name: section;
+    animation-duration: 4s;
+}
+
+.footer-content{
+    padding-left: 60px;
+}
